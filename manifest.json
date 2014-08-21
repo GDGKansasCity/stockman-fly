@@ -1,0 +1,22 @@
+{
+  "name": "GDG Kansas City - Google Domain beta invite hunt",
+  "version": "1.0",
+  "description": "Browse the web to find the codes we've hidden!",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_icon": "img/gdg-icon-19.png",
+    "default_title": "Click to reveal the next step of your journey!"
+  },
+  "permissions": [
+    "activeTab",
+    "declarativeContent"
+  ],
+  "icons": {
+    "48": "img/gdg-icon-48.png",
+    "128": "img/gdg-icon-128.png"
+  },
+  "manifest_version": 2
+}
