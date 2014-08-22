@@ -16,7 +16,7 @@ This makes use of the following Chrome Extension APIs:
 * [chrome.tabs]
 * [chrome.runtime]
 
-Also in keeping with our TMNT project themes, here is the reference to how we came up with [Stockman-Fly].
+Also in keeping with our TMNT project themes, here is the reference to where we got the [Stockman-Fly] project name.
 
 [chrome.declarativeContent]: https://developer.chrome.com/extensions/declarativeContent
 [chrome.pageAction]: https://developer.chrome.com/extensions/pageAction
