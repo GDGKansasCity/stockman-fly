@@ -27,11 +27,11 @@ A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox
 * [GDGKC Facebook]
 * [GDGKC YouTube]
 * [GDGKC Meetup]
-Extra links found by Easter Egg finders:
+**Extra links found by Easter Egg finders:**
 * [GDGKC LinkedIn]
 * [GDGKC Eventbrite]
 
-**The power of the RegEx**
+**The power of the RegEx** - 
 Using the [chrome.declarativeContent] API, we were able to easily hide the GDG Boomerang on multiple sites conected to GDG Kansas City. The property used was 'urlMatches' which follows the [RE2 syntax].
 
 Also in keeping with our TMNT project themes, here is where we got the [Stockman-Fly] project name.
