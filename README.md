@@ -18,9 +18,16 @@ A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox
 * [chrome.tabs]
 * [chrome.runtime]
 
+#### The power of the RegEx:
+Using the [chrome.declarativeContent] API, we were able to easily hide the GDG Boomerang on multiple sites conected to GDG Kansas City. The property used was 'urlMatches' which follows the [RE2 syntax].
+
+#### Project name origin:
+Also in keeping with our TMNT project themes, here is where we got the [Stockman-Fly] project name.
+
+
 ![easter eggs](https://lh3.googleusercontent.com/-NMSf9XeAclE/VA3xzD3GPqI/AAAAAAAAAkU/0mFfJUPgi3E/w400-h283-no/gdg_easter_eggs.png)
 
-### These are the pages where we hid the Easter Eggs (GDG Boomerang logo):
+#### These are the pages where we hid the Easter Eggs (GDG Boomerang logo):
 * [GDGKC Website]
 * [GDGKC Google+]
 * [GDGKC Google Developer Group listing]
@@ -30,15 +37,9 @@ A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox
 * [GDGKC YouTube]
 * [GDGKC Meetup]
 
-### Extra pages found by Easter Egg finders:
+#### Extra pages found by Easter Egg finders:
 * [GDGKC LinkedIn]
 * [GDGKC Eventbrite]
-
-### The power of the RegEx
-Using the [chrome.declarativeContent] API, we were able to easily hide the GDG Boomerang on multiple sites conected to GDG Kansas City. The property used was 'urlMatches' which follows the [RE2 syntax].
-
-### Project name origin
-Also in keeping with our TMNT project themes, here is where we got the [Stockman-Fly] project name.
 
 [chrome.declarativeContent]: https://developer.chrome.com/extensions/declarativeContent
 [chrome.pageAction]: https://developer.chrome.com/extensions/pageAction
