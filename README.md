@@ -2,7 +2,7 @@ Project Stockman-Fly
 ============
 A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox next to the bookmark star when a user navigates to a page where we have hidden an Easter Egg!
 
-**To manually install the Google Chrome extension:**
+### To manually install the Google Chrome extension:
 * Download and Unzip the contents to a new folder
 * Open Chrome, in a new tab type: chrome://extensions
 * Check the "Developer mode" checkbox
@@ -12,13 +12,15 @@ A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox
 
 ![stockman fly](https://lh3.googleusercontent.com/-pdHLwHY4Bpo/U_dyDhBWH6I/AAAAAAAAAho/zHqdevBuyNE/w440-h280-no/promo_small.png)
 
-**This makes use of the following Chrome Extension APIs:**
+### This makes use of the following Chrome Extension APIs:
 * [chrome.declarativeContent]
 * [chrome.pageAction]
 * [chrome.tabs]
 * [chrome.runtime]
 
-**The following locations are pages where the Easter Egg (GDG Boomerang logo) is revealed in the omnibox:**
+![easter eggs](https://lh3.googleusercontent.com/-NMSf9XeAclE/VA3xzD3GPqI/AAAAAAAAAkU/0mFfJUPgi3E/w400-h283-no/gdg_easter_eggs.png)
+
+### These are the pages where we hid the Easter Eggs (GDG Boomerang logo):
 * [GDGKC Website]
 * [GDGKC Google+]
 * [GDGKC Google Developer Group listing]
@@ -28,14 +30,14 @@ A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox
 * [GDGKC YouTube]
 * [GDGKC Meetup]
 
-**Extra links found by Easter Egg finders:**
+### Extra pages found by Easter Egg finders:
 * [GDGKC LinkedIn]
 * [GDGKC Eventbrite]
 
-**The power of the RegEx** - 
+### The power of the RegEx
 Using the [chrome.declarativeContent] API, we were able to easily hide the GDG Boomerang on multiple sites conected to GDG Kansas City. The property used was 'urlMatches' which follows the [RE2 syntax].
 
-**Project name origin** - 
+### Project name origin
 Also in keeping with our TMNT project themes, here is where we got the [Stockman-Fly] project name.
 
 [chrome.declarativeContent]: https://developer.chrome.com/extensions/declarativeContent
