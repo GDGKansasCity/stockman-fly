@@ -20,7 +20,7 @@ A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox
 
 **The following locations are pages where the Easter Egg (GDG Boomerang logo) is revealed in the omnibox:**
 * [GDGKC Website]
-* [GDGKC Googe+]
+* [GDGKC Google+]
 * [GDGKC Google Developer Group listing]
 * [GDGKC GitHub]
 * [GDGKC Twitter]
@@ -44,7 +44,7 @@ Also in keeping with our TMNT project themes, here is where we got the [Stockman
 [Stockman-Fly]: http://en.wikipedia.org/wiki/Baxter_Stockman
 [GDGKC Website]: http://gdgkc.org
 [GDGKC Google+]: https://plus.google.com/116015988631052616691
-[GDGKC Google Developer Group lising]: https://developers.google.com/groups/chapter/116015988631052616691/
+[GDGKC Google Developer Group listing]: https://developers.google.com/groups/chapter/116015988631052616691/
 [GDGKC GitHub]: https://github.com/GDGKansasCity
 [GDGKC Twitter]: https://twitter.com/GDGKansasCity
 [GDGKC Facebook]: https://www.facebook.com/GDGKansasCity
