@@ -18,10 +18,37 @@ A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox
 * [chrome.tabs]
 * [chrome.runtime]
 
-Also in keeping with our TMNT project themes, here is the reference to where we got the [Stockman-Fly] project name.
+**The following locations are pages where the Easter Egg (GDG Boomerang logo) is revealed in the omnibox:**
+* [GDGKC Website]
+* [GDGKC Googe+]
+* [GDGKC Google Developer Group listing]
+* [GDGKC GitHub]
+* [GDGKC Twitter]
+* [GDGKC Facebook]
+* [GDGKC YouTube]
+* [GDGKC Meetup]
+Extra links found by Easter Egg finders:
+* [GDGKC LinkedIn]
+* [GDGKC Eventbrite]
+
+**The power of the RegEx**
+Using the [chrome.declarativeContent] API, we were able to easily hide the GDG Boomerang on multiple sites conected to GDG Kansas City. The property used was 'urlMatches' which follows the [RE2 syntax].
+
+Also in keeping with our TMNT project themes, here is where we got the [Stockman-Fly] project name.
 
 [chrome.declarativeContent]: https://developer.chrome.com/extensions/declarativeContent
 [chrome.pageAction]: https://developer.chrome.com/extensions/pageAction
 [chrome.tabs]: https://developer.chrome.com/extensions/tabs
 [chrome.runtime]: https://developer.chrome.com/extensions/runtime
+[RE2 syntax]: http://code.google.com/p/re2/wiki/Syntax
 [Stockman-Fly]: http://en.wikipedia.org/wiki/Baxter_Stockman
+[GDGKC Website]: http://gdgkc.org
+[GDGKC Google+]: https://plus.google.com/116015988631052616691
+[GDGKC Google Developer Group lising]: https://developers.google.com/groups/chapter/116015988631052616691/
+[GDGKC GitHub]: https://github.com/GDGKansasCity
+[GDGKC Twitter]: https://twitter.com/GDGKansasCity
+[GDGKC Facebook]: https://www.facebook.com/GDGKansasCity
+[GDGKC YouTube]: http://www.youtube.com/user/GDGKansasCity
+[GDGKC Meetup]: http://www.meetup.com/GDG-Kansas-City/
+[GDGKC LinkedIn]: http://www.linkedin.com/groups/GDG-Kansas-City-6543088
+[GDGKC Eventbrite]: http://www.eventbrite.com/o/gdg-kansas-city-4534282341
