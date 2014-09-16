@@ -1,1 +1,58 @@
-var _0x9813=["\x28\x3F\x69\x29\x28\x28\x47\x44\x47\x29\x5B\x2D\x5D\x3F\x28\x4B\x61\x6E\x73\x61\x73\x29\x5B\x2D\x5D\x3F\x28\x43\x69\x74\x79\x29\x7C\x28\x67\x64\x67\x6B\x63\x29\x7C\x28\x31\x31\x36\x30\x31\x35\x39\x38\x38\x36\x33\x31\x30\x35\x32\x36\x31\x36\x36\x39\x31\x29\x29","\x64\x65\x63\x6C\x61\x72\x61\x74\x69\x76\x65\x43\x6F\x6E\x74\x65\x6E\x74","\x61\x64\x64\x52\x75\x6C\x65\x73","\x6F\x6E\x50\x61\x67\x65\x43\x68\x61\x6E\x67\x65\x64","\x72\x65\x6D\x6F\x76\x65\x52\x75\x6C\x65\x73","\x61\x64\x64\x4C\x69\x73\x74\x65\x6E\x65\x72","\x6F\x6E\x49\x6E\x73\x74\x61\x6C\x6C\x65\x64","\x72\x75\x6E\x74\x69\x6D\x65","\x73\x63\x72\x65\x65\x6E\x73\x68\x6F\x74\x2E\x68\x74\x6D\x6C\x3F\x69\x64\x3D","\x67\x65\x74\x55\x52\x4C","\x65\x78\x74\x65\x6E\x73\x69\x6F\x6E","\x69\x64","\x73\x74\x61\x74\x75\x73","\x63\x6F\x6D\x70\x6C\x65\x74\x65","\x72\x65\x6D\x6F\x76\x65\x4C\x69\x73\x74\x65\x6E\x65\x72","\x6F\x6E\x55\x70\x64\x61\x74\x65\x64","\x74\x61\x62\x73","\x67\x65\x74\x56\x69\x65\x77\x73","\x6C\x65\x6E\x67\x74\x68","\x68\x72\x65\x66","\x6C\x6F\x63\x61\x74\x69\x6F\x6E","\x73\x65\x74\x53\x63\x72\x65\x65\x6E\x73\x68\x6F\x74\x55\x72\x6C","\x63\x72\x65\x61\x74\x65","\x63\x61\x70\x74\x75\x72\x65\x56\x69\x73\x69\x62\x6C\x65\x54\x61\x62","\x6F\x6E\x43\x6C\x69\x63\x6B\x65\x64","\x70\x61\x67\x65\x41\x63\x74\x69\x6F\x6E"];chrome[_0x9813[7]][_0x9813[6]][_0x9813[5]](function (){chrome[_0x9813[1]][_0x9813[3]][_0x9813[4]](undefined,function (){chrome[_0x9813[1]][_0x9813[3]][_0x9813[2]]([{conditions:[ new chrome[_0x9813[1]].PageStateMatcher({pageUrl:{urlMatches:_0x9813[0]}})],actions:[ new chrome[_0x9813[1]].ShowPageAction()]}]);} );} );var id=100;function takeScreenshot(){chrome[_0x9813[16]][_0x9813[23]](null,function (_0x63d8x3){var _0x63d8x4=_0x63d8x3;var _0x63d8x5=chrome[_0x9813[10]][_0x9813[9]](_0x9813[8]+id++);chrome[_0x9813[16]][_0x9813[22]]({url:_0x63d8x5},function (_0x63d8x6){var _0x63d8x7=_0x63d8x6[_0x9813[11]];var _0x63d8x8=function (_0x63d8x9,_0x63d8xa){if(_0x63d8x9!=_0x63d8x7||_0x63d8xa[_0x9813[12]]!=_0x9813[13]){return ;} ;chrome[_0x9813[16]][_0x9813[15]][_0x9813[14]](_0x63d8x8);var _0x63d8xb=chrome[_0x9813[10]][_0x9813[17]]();for(var _0x63d8xc=0;_0x63d8xc<_0x63d8xb[_0x9813[18]];_0x63d8xc++){var _0x63d8xd=_0x63d8xb[_0x63d8xc];if(_0x63d8xd[_0x9813[20]][_0x9813[19]]==_0x63d8x5){_0x63d8xd[_0x9813[21]](_0x63d8x4);break ;} ;} ;} ;chrome[_0x9813[16]][_0x9813[15]][_0x9813[5]](_0x63d8x8);} );} );} ;chrome[_0x9813[25]][_0x9813[24]][_0x9813[5]](function (_0x63d8x6){takeScreenshot();} );
+chrome.runtime.onInstalled.addListener(function() {
+  chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
+    chrome.declarativeContent.onPageChanged.addRules([
+      {
+        conditions: [
+          new chrome.declarativeContent.PageStateMatcher({
+            pageUrl: { urlMatches: '(?i)((GDG)[-]?(Kansas)[-]?(City)|(gdgkc)|(116015988631052616691))' }
+          })
+        ],
+        actions: [ new chrome.declarativeContent.ShowPageAction() ]
+      }
+    ]);
+  });
+});
+
+var id = 100;
+function takeScreenshot() {
+  chrome.tabs.captureVisibleTab(null, function(img) {
+    var screenshotUrl = img;
+    var viewTabUrl = chrome.extension.getURL('screenshot.html?id=' + id++)
+
+    chrome.tabs.create({url: viewTabUrl}, function(tab) {
+      var targetId = tab.id;
+
+      var addSnapshotImageToTab = function(tabId, changedProps) {
+        // We are waiting for the tab we opened to finish loading.
+        // Check that the the tab's id matches the tab we opened,
+        // and that the tab is done loading.
+        if (tabId != targetId || changedProps.status != 'complete')
+          return;
+
+        // Passing the above test means this is the event we were waiting for.
+        // There is nothing we need to do for future onUpdated events, so we
+        // use removeListner to stop geting called when onUpdated events fire.
+        chrome.tabs.onUpdated.removeListener(addSnapshotImageToTab);
+
+        // Look through all views to find the window which will display
+        // the screenshot.  The url of the tab which will display the
+        // screenshot includes a query parameter with a unique id, which
+        // ensures that exactly one view will have the matching URL.
+        var views = chrome.extension.getViews();
+        for (var i = 0; i < views.length; i++) {
+          var view = views[i];
+          if (view.location.href == viewTabUrl) {
+            view.setScreenshotUrl(screenshotUrl);
+            break;
+          }
+        }
+      };
+      chrome.tabs.onUpdated.addListener(addSnapshotImageToTab);
+    });
+  });
+}
+
+// Called when the user clicks on the page action.
+chrome.pageAction.onClicked.addListener(function(tab) {
+  takeScreenshot();
+});
