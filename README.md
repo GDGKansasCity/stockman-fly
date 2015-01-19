@@ -1,12 +1,12 @@
 Project Stockman-Fly
 ============
-A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox next to the bookmark star when a user navigates to a page where we have hidden an Easter Egg!
+A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox next to the bookmark star when a user navigates to a page where we have hidden a Google Domain Easter Egg for a beta invitation!
 
 ### To manually install the Google Chrome extension:
 * Download and Unzip the contents to a new folder
-* Open Chrome, in a new tab type: chrome://extensions
-* Check the "Developer mode" checkbox
-* Click the "Load unpacked extension..." button
+* Open Chrome, in a new tab type: `chrome://extensions`
+* Check the `Developer mode` checkbox
+* Click the `Load unpacked extension...` button
 * Navigate to the new folder you created & select it (the folder only)
 * Click "Open"/"Ok"
 
@@ -19,7 +19,7 @@ A simple Google Chrome extension that adds the GDG Boomerang logo to the omnibox
 * [chrome.runtime]
 
 #### The power of the RegEx:
-Using the [chrome.declarativeContent] API, we were able to easily hide the GDG Boomerang on multiple sites conected to GDG Kansas City. The property used was 'urlMatches' which follows the [RE2 syntax].
+Using the [chrome.declarativeContent] API, we were able to easily hide the GDG Boomerang on multiple sites conected to GDG Kansas City. The property used was `urlMatches` which follows the [RE2 syntax].
 
 #### Project name origin:
 Also in keeping with our TMNT project themes, here is where we got the [Stockman-Fly] project name.
